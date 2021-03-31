@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Accordion using CSS & Javascript</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="accordition">
+            <div class="contentBx">
+                <div class="label">List One</div>
+                <div class="content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni fuga numquam iusto, corporis saepe nemo nisi veritatis nihil tempora excepturi quasi libero, vero in ratione sequi ipsam soluta porro repellendus.
+     
+                    </p>
+                </div>
+            </div>
+            <div class="contentBx">
+             <div class="label">List Two</div>
+             <div class="content">
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni fuga numquam iusto, corporis saepe nemo nisi veritatis nihil tempora excepturi quasi libero, vero in ratione sequi ipsam soluta porro repellendus.
+                     
+                 </p>
+             </div>
+         </div>
+         <div class="contentBx">
+             <div class="label">List Three</div>
+             <div class="content">
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni fuga numquam iusto, corporis saepe nemo nisi veritatis nihil tempora excepturi quasi libero, vero in ratione sequi ipsam soluta porro repellendus.
+                     
+                 </p>
+             </div>
+         </div>
+         <div class="contentBx">
+             <div class="label">List Four</div>
+             <div class="content">
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni fuga numquam iusto, corporis saepe nemo nisi veritatis nihil tempora excepturi quasi libero, vero in ratione sequi ipsam soluta porro repellendus.
+                     
+                 </p>
+             </div>
+         </div>
+        </div>
+       <script>
+           const accordition = document.getElementsByClassName('contentBx');
+           for(i=0;i<accordition.length;i++){
+               accordition[i].addEventListener('click', function(){
+                   this.classList.toggle('active');
+               })
+           }
+       </script>
+    </body>
+</html>
